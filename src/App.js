@@ -1,10 +1,16 @@
 import React from "react";
+import Cardlist from "./components/cardlist/Cardlist";
+import Searchbox from "./components/searchbox/Searchbox";
 import "./App.css";
 
-function App() {
+function App({ robots }) {
+  handleChange;
   return (
-    <div className="App">
-      <h1>Hello world.</h1>
+    <div className="tc App">
+      <h1>Robofriends.</h1>
+      <Searchbox />
+
+      <Cardlist robots={robots} />
     </div>
   );
 }
